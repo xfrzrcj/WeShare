@@ -20,6 +20,9 @@
 .search-sub{top: 0.06rem;width: 0.3rem;height: 0.3rem;background: url("../images/search.png");font-size: 0;right: 0.1rem;background-size: 100%}
 .return-top{bottom: 1.35rem;right: 3%}
 .return-top img{width: 0.6rem}
+
+.sort li{font-size: 0.22rem;line-height: 0.45rem;}
+.sort{height: 0.45rem;padding: 0.22rem 0}
 /* 详情页 */
 .comment-title{font-size: 0.22rem;padding-bottom: 0.14rem}
 .comment-list .news-preview{font-size: 0.116rem;line-height: 0.25rem;margin-bottom: 0;margin-left: 0.344rem}
@@ -34,3 +37,22 @@
 .content-btn{height: 0.26rem;padding-top: 5px}
 .btn-box2 button{width: 33%}
 .see{font-size:0.114rem;line-height: 0.24rem;margin-right: 10px}
+/* 上链 */
+.modal{width: 5rem;border-radius: 0.09rem;top: 1.2rem;left: 50%;margin-left: -2.5rem}
+.modal-box{padding:0.2rem;}
+.modal-head{font-size: 0.2rem;font-weight: bold;text-align: center;position: relative;}
+.p-text{font-size: 0.16rem;padding:0.114rem 0}
+.p-ipt{font-size: 0.144rem}
+.ipt-box{    height: 0.25rem;
+    padding: 0;
+    border-radius: 5px;
+    border: solid 1px #ddd;    margin-bottom: 0.15rem;}
+ .ipt-sub{border: solid 1px #3367D6;background: #3367D6;color: #fff;height:0.29rem} 
+  .file {
+    line-height: 0.22rem;
+}
+.file input {
+    font-size: 1.2rem;
+}
+.p-ipt textarea{height: 1.14rem}
+.close{width: 0.22rem}
