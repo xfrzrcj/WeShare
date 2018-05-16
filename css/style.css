@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0;font-family: 'Î¢ÈíÑÅºÚ'}
+ul,li{list-style-type: none}
+.head{background: #3367D6;color: #fff;position: relative}
+.btn-box button{width: 25%;float: left;background: none;border: solid 1px #333}
+.btn-box span{display: inline-block;}
+
+.like .news-icon{background: url("../images/like.png") no-repeat center center}
+.comment .news-icon{background: url("../images/comment.png") no-repeat center center}
+.share .news-icon{background: url("../images/share.png") no-repeat center center}
+.no-like .news-icon{background: url("../images/nolike.png") no-repeat center center}
+.news-list{border-bottom: solid 1px #3367D6}
+.news-list:last-of-type{border-bottom: none}
+.info-user img,.info-user span{float: left;}
+.bottom{text-align: center;border-top: solid 1px #3367D6;}
+.title{float: left}
+.edit{position: absolute;}
+.title{font-weight: bold}
+.search{position: relative}
+.search-sub{position: absolute;right: 5px;border: none}
+.search-world{border: none;border-radius: 5px}
+.return-top{position: fixed;font-size: 0}
+.mask{position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.7);display: none;}
+/* 详情页 */
+.comment-title{border-bottom: solid 2px #3367D6;font-weight: bold;}
+.btn-box1{position: fixed;bottom: 0;left: 0;width: 100%;background: #fff}
+.btn-box2,.see{float: right;color: #3367D6}

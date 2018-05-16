@@ -1,0 +1,36 @@
+.main{width:5rem;margin: 0 auto;padding-top: 0.7rem}
+.btn-box{height: 0.6rem}
+.btn-box span{line-height: 0.5rem}
+.btn-box .news-icon{width: 0.41rem;background-size: 100%}
+.news-preview{font-size: 0.154rem;line-height:0.26rem;margin-bottom: 0.16rem}
+.news-list{padding-bottom: 0.22rem}
+.info-user{height: 0.565rem;padding: 0.114rem 0;line-height: 0.565rem}
+.info-user img{width:0.565rem;}
+.user-name{font-size: 0.186rem;font-weight: bold;margin:0 0.144rem}
+.news-time{font-size: 0.114rem}
+.bottom{padding: 0.186rem;line-height:0.22rem;font-size: 0.126rem}
+.head-box{width: 5rem;margin: 0 auto;height: 0.87rem;line-height: 0.87rem}
+.edit{right: 0.14rem;top: 0.2rem;font-size: 0}
+.edit img{width: 0.47rem;height: 0.47rem}
+.title{font-size: 0.5rem}
+.search{font-size: 0;background:#1296DB;width: 100%;position: absolute;left: 0;
+    top: 0.87rem;}
+.search div{width:4.14rem;height: 0.4rem;margin: 0.15rem auto;position: relative;}    
+.search-world{width: 4rem;height: 0.4rem;display: block;padding-left: 0.14rem}
+.search-sub{top: 0.06rem;width: 0.3rem;height: 0.3rem;background: url("../images/search.png");font-size: 0;right: 0.1rem;background-size: 100%}
+.return-top{bottom: 1.35rem;right: 3%}
+.return-top img{width: 0.6rem}
+/* 详情页 */
+.comment-title{font-size: 0.22rem;padding-bottom: 0.14rem}
+.comment-list .news-preview{font-size: 0.116rem;line-height: 0.25rem;margin-bottom: 0;margin-left: 0.344rem}
+.comment-list .info-user img{height: 0.32rem;width: 0.32rem}
+.comment-list{padding-bottom: 0.24rem}
+.comment-list .info-user{height: 0.32rem;padding: 6px 0}
+.comment-list .info-user span{line-height: 0.32rem}
+.comment-list .user-name{font-size: 0.144rem;font-weight: bold;margin:0 6px}
+.btn-box2{width: 50%;height: 0.26rem}
+.btn-box2 span{line-height: 0.25rem;font-size: 0.09rem}
+.btn-box2 .news-icon{width: 0.15rem;background-size: 100%}
+.content-btn{height: 0.26rem;padding-top: 5px}
+.btn-box2 button{width: 33%}
+.see{font-size:0.114rem;line-height: 0.24rem;margin-right: 10px}

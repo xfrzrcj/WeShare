@@ -1,0 +1,32 @@
+.main{width: 80%;margin: 0 auto}
+.btn-box{height: 47px}
+.btn-box span{line-height: 48px}
+.btn-box .news-icon{width: 48px;}
+.news-preview{font-size: 18px;line-height: 30px;margin-bottom: 20px}
+.news-list{padding-bottom: 30px}
+.info-user{height: 48px;padding: 10px 0}
+.info-user span{line-height: 48px}
+.user-name{font-size: 20px;font-weight: bold;margin:0 10px}
+.news-time{font-size: 12px}
+.bottom{padding: 20px;line-height: 30px;font-size: 18px}
+.head-box{width: 80%;margin: 0 auto;height: 120px;line-height: 120px}
+.edit{right: 10%;top: 28px;font-size: 0}
+.title{font-size: 48px}
+.search{right: 20%;font-size: 0;position: absolute}
+.search-world{width: 450px;height: 40px;padding-left: 10px}
+.search-sub{top: 39px;width: 32px;height: 32px;background: url("../images/search.png");font-size: 0}
+.return-top{bottom: 100px;right: 3%}
+/* 详情页 */
+.comment-title{font-size: 20px;padding-bottom: 10px}
+.comment-list .news-preview{font-size: 14px;line-height: 24px;margin-bottom: 0;margin-left: 38px}
+.comment-list .info-user img{height: 32px}
+.comment-list{padding-bottom: 22px}
+.comment-list .info-user{height: 32px;padding: 6px 0}
+.comment-list .info-user span{line-height: 32px}
+.comment-list .user-name{font-size: 16px;font-weight: bold;margin:0 6px}
+.btn-box2{width: 30%}
+.btn-box2 span{line-height: 26px;font-size: 8px}
+.btn-box2 .news-icon{width: 26px;background-size: 100%}
+.content-btn{height: 28px;padding-top: 5px}
+.btn-box2 button{width: 33%}
+.see{font-size:12px;line-height: 28px;margin-right: 10px}

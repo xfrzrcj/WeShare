@@ -159,38 +159,5 @@
         <img src="images/top.png" alt=""/>
     </span>
     <div class="mask"></div>
-    <div class="modal">
-        <div class="modal-box">
-            <div class="modal-head">上链</div>
-            <div class="modal-body">
-                <p class="p-text">选择你的钱包文件</p>
-                <p class="p-ipt">
-                    <a href="javascript:;" class="file">选择文件
-                        <input type="file" name="" id="">
-                    </a>
-                </p>
-                <p class="p-text">address</p>
-                <p class="p-ipt">
-                   <input class='ipt-box' type="text">
-                </p>
-                <p class="p-ipt">
-                   <input class='ipt-box' type="button" value="提交">
-                </p>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(function(){
-            $.ajax({
-                data:'', //传输数据
-                type:'post', //请求方式
-                url:'', //接口地址
-                dataType:'json',//数据类型
-                success:function(d){
-                    console.log(d); //返回数据
-                }
-            })
-        })
-    </script>
 </body>
 </html>
