@@ -16,6 +16,9 @@
 .search-world{width: 450px;height: 40px;padding-left: 10px}
 .search-sub{top: 39px;width: 32px;height: 32px;background: url("../images/search.png");font-size: 0}
 .return-top{bottom: 100px;right: 3%}
+
+.sort li{font-size: 20px;line-height: 45px;}
+.sort{height: 45px;padding: 20px 0}
 /* 详情页 */
 .comment-title{font-size: 20px;padding-bottom: 10px}
 .comment-list .news-preview{font-size: 14px;line-height: 24px;margin-bottom: 0;margin-left: 38px}
@@ -30,3 +33,22 @@
 .content-btn{height: 28px;padding-top: 5px}
 .btn-box2 button{width: 33%}
 .see{font-size:12px;line-height: 28px;margin-right: 10px}
+/* 上链 */
+.modal{width: 500px;border-radius: 10px;top: 100px;left: 50%;margin-left: -250px}
+.modal-box{padding:20px;}
+.modal-head{font-size: 20px;font-weight: bold;text-align: center;position: relative;}
+.p-text{font-size: 16px}
+.p-ipt{font-size: 14px}
+.ipt-box{    height: 28px;
+    padding: 0;
+    border-radius: 5px;
+    border: solid 1px #ddd;    margin-bottom: 15px;}
+ .ipt-sub{border: solid 1px #3367D6;background: #3367D6;color: #fff;height: 30px}   
+
+ .file {
+    line-height: 20px;
+}
+.file input {
+    font-size: 100px;
+}
+.p-ipt textarea{height: 80px}
