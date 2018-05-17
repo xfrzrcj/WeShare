@@ -197,9 +197,16 @@
         </div>
     </div>
     <script>
-        $(function(){
-            
-        })
+        $.ajax({
+			contentType:"application/json",
+			data:'{"from":"n1EjkdHBDpdjFfVaeJqMQW11RhYqrrjCZR7","to":"n1huG18QbozvJn3Hdyn11sBKkvHQ9pdRz7D","value":"0","nonce":3,"gasPrice":"1000000","gasLimit":"2000000","contract":{"function":"getNewMessages","args":"[\\"0\\",10]"}}',
+			type:'post',
+			url:'https://testnet.nebulas.io/v1/user/call',
+			dataType:'json',
+			success:function(d){
+				alert(JSON.stringify(d));
+			}
+		})
     </script>
 </body>
 </html>
