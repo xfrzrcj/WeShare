@@ -1,7 +1,8 @@
 $(function(){
 	$(".edit1").click(function(){
-		$(".mask").show();
-		$(".modal2").show();
+		/*$(".mask").show();
+		$(".modal2").show();*/
+		onClickCallDapp()
 	})
 	$(".edit").click(function(){
 		$(".mask").show();
@@ -20,9 +21,41 @@ $(function(){
 	$(".return-top").click(function() {
         $("html,body").animate({scrollTop:0}, 500);
     }); 
-     $(".like").click(function() {
+     var NebPay = require("nebpay");
+		var nebPay = new NebPay();
+
+		//to check if the extension is installed
+		//if the extension is installed, var "webExtensionWallet" will be injected in to web page
+		if(typeof(webExtensionWallet) === "undefined"){
+			alert ("Extension wallet is not installed, please install it first.")
+		}
+		
+		
+		function onClickCallDapp() {
+			var to = "n1huG18QbozvJn3Hdyn11sBKkvHQ9pdRz7D";
+			var value = 0;
+			var callFunction = 'publicMsg';
+			var callArgs = '["dsfsfs"]';
+			nebPay.call(to, value, callFunction, callArgs, {
+				qrcode: {
+					showQRCode: true
+				},
+				goods: {
+					name: "test",
+					desc: "test goods"
+				},
+				//callback: cbCallDapp
+				listener: cbCallDapp
+			});
+		}
+
+		function cbCallDapp(resp){
+			console.log("callback resp: " + JSON.stringify(resp))
+			document.getElementById("callResult").innerHTML = "call Dapp result:\n" +  JSON.stringify(resp)
+		}
+
        
-    });
+		//onClickCallDapp()
 })
 function dianzan(th){
 	//点赞
