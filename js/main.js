@@ -38,20 +38,21 @@ $(function(){
 			var callArgs = '["dsfsfs"]';
 			nebPay.call(to, value, callFunction, callArgs, {
 				qrcode: {
-					showQRCode: true
+					//showQRCode: true
+					showQRCode: false
 				},
 				goods: {
 					name: "test",
 					desc: "test goods"
 				},
 				//callback: cbCallDapp
-				listener: cbCallDapp
+				//listener: cbCallDapp
 			});
 		}
 
 		function cbCallDapp(resp){
 			console.log("callback resp: " + JSON.stringify(resp))
-			document.getElementById("callResult").innerHTML = "call Dapp result:\n" +  JSON.stringify(resp)
+			//document.getElementById("callResult").innerHTML = "call Dapp result:\n" +  JSON.stringify(resp)
 		}
 
        
@@ -69,7 +70,8 @@ function dianzan(th){
             success:function(d){
                var num=parseInt(th.find('span').eq(1).html())+1
                th.find('span').eq(1).html(num);
-               th.addClass('active').siblings().removeClass('active')
+               th.addClass('active').siblings().removeClass('active');
+               onClickCallDapp();
             }
         })
 }
