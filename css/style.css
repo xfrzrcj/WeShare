@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;font-family: 'Î¢ÈíÑÅºÚ'}
 ul,li{list-style-type: none}
 .head{background: #3367D6;color: #fff;position: relative}
-.btn-box button{width: 33%;float: left;background: none;border: solid 1px #333}
+.btn-box button{width: 33%;float: left;background: none;border: none;outline: none}
 .btn-box span{display: inline-block;}
 
 .like .news-icon{background: url("../images/like.png") no-repeat center center}
@@ -15,7 +15,7 @@ ul,li{list-style-type: none}
 .info-user img,.info-user span{float: left;}
 .bottom{text-align: center;border-top: solid 1px #3367D6;}
 .title{float: left}
-.edit{position: absolute;}
+.edit,.edit1{position: absolute;}
 .title{font-weight: bold}
 .search{position: relative}
 .search-sub{position: absolute;right: 5px;border: none}

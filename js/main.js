@@ -1,7 +1,11 @@
 $(function(){
+	$(".edit1").click(function(){
+		$(".mask").show();
+		$(".modal2").show();
+	})
 	$(".edit").click(function(){
 		$(".mask").show();
-		$(".modal").show();
+		$(".modal1").show();
 	})
 	$(".close").click(function(){
 		$(".mask").hide();
