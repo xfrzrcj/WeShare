@@ -147,7 +147,7 @@
             dataType:'json',
             success:function(d){
                 var data=eval('(' + d.result.result + ')')
-                //console.log(data);
+                console.log(data);
                 $(data).each(function(index,obj){
                     var li='<li data-hash="'+obj.hash+'" class="news-list"><p class="info-user"><img src="images/photo.png" alt=""/>'+
                     '<span class="user-name">'+obj.authorName+'</span><span class="news-time">'+obj.addTime+'</span>'+
