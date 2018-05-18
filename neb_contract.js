@@ -31,6 +31,7 @@ var Msg = function(jsonStr) {
         this.hash = obj.hash;  //文章hash
         this.txt = obj.txt;
 		this.comments = obj.comments;//评论数量
+		this.title = obj.title;//标题名
     }
 }
 
@@ -289,7 +290,7 @@ WeiBoContract.prototype = {
 		}
     },
 
-    publicMsg: function(txt) {  //发布文章,需要发送交易
+    publicMsg: function(title,txt) {  //发布文章,需要发送交易
 		var user = Blockchain.transaction.from;
 		if(!this.users.get(user)){
 			throw new Error("user not exist");
@@ -303,6 +304,7 @@ WeiBoContract.prototype = {
         msg.txt = txt;
 		msg.hash = mesHash;
 		msg.comments = 0;
+		msg.title = title;
         this.allMessages.put(mesHash, msg);        
 
         this.newestMessagesNo = this.newestMessagesNo + 1;
@@ -370,6 +372,10 @@ WeiBoContract.prototype = {
         }
         return result;
     },
+	//根据hash查找文章
+	getMessageByHash(hash){
+		return this.allMessages.get(hash);
+	},
 	//根据user的hash查看某人的文章信息
 	getMessageByUser(user,size){
 		var result = new Array();
@@ -447,6 +453,14 @@ WeiBoContract.prototype = {
 		user.name = name;
 		user.photo = photo;
 		this.users.set(userhash,user);
+	},
+	//判断用户是否注册过
+	isUserSignIn:function(){
+		if(this.users.get(Blockchain.transaction.from)){
+			return true;
+		}else{
+			return false;
+		}
 	},
 	//获取用户信息
 	getUser:function(hash){
