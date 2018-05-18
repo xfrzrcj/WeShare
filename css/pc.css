@@ -1,4 +1,4 @@
-.main{width: 80%;margin: 0 auto}
+.main{width: 980px;margin: 0 auto}
 .btn-box{height: 47px}
 .btn-box span{line-height: 48px}
 .btn-box .news-icon{width: 48px;}
@@ -9,8 +9,9 @@
 .user-name{font-size: 20px;font-weight: bold;margin:0 10px}
 .news-time{font-size: 12px}
 .bottom{padding: 20px;line-height: 30px;font-size: 18px}
-.head-box{width: 80%;margin: 0 auto;height: 120px;line-height: 120px}
+.head-box{width: 980px;margin: 0 auto;height: 120px;line-height: 120px}
 .edit{right: 10%;top: 28px;font-size: 0}
+.edit1{right: 20%;top: 23px;font-size: 0}
 .title{font-size: 48px}
 .search{right: 20%;font-size: 0;position: absolute}
 .search-world{width: 450px;height: 40px;padding-left: 10px}
