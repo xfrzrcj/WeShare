@@ -1,5 +1,5 @@
 ﻿'use strict';
-
+//地址n1hmmwZM1A5zeKwjZMThi6RpMyVJ1ccWU5t
 //文章 数据结构
 var Msg = function(jsonStr) {
     if (jsonStr) {
