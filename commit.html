@@ -57,13 +57,13 @@
         <div class="modal-box">
             <div class="modal-head">上链<img class="close" src="images/close.png" alt=""></div>
             <div class="modal-body">
-                <p class="p-text">选择你的钱包文件</p>
+                <p class="p-text">头像</p>
                 <p class="p-ipt">
-                    <a href="javascript:;" class="file">选择文件
-                        <input type="file" name="" id="">
+                    <a href="javascript:;" class="file">选择头像
+                        <input id="imgForm" type="file" accept="image/*" name="" id="">
                     </a>
                 </p>
-                <p class="p-text">address</p>
+                <p class="p-text">用户名</p>
                 <p class="p-ipt">
                    <input class='ipt-box' type="text">
                 </p>
@@ -212,7 +212,7 @@
         function fabiao(){
         //发表
         var text=$("#text").val();
-        alert(text);
+        //alert(text);
         $.ajax({
             contentType:"application/json",
             data:'{"from":"n1EjkdHBDpdjFfVaeJqMQW11RhYqrrjCZR7","to":"n1huG18QbozvJn3Hdyn11sBKkvHQ9pdRz7D","value":"0","nonce":3,"gasPrice":"1000000","gasLimit":"2000000","contract":{"function":"publicMsg","args":"[\\"'+text+'\\"]"}}',
@@ -227,6 +227,27 @@
             }
         })
         }
+        function loadImg(){  
+            //获取文件  
+            var file = $("#imgForm").files[0];  
+  
+            //创建读取文件的对象  
+            var reader = new FileReader();  
+  
+            //创建文件读取相关的变量  
+            var imgFile;  
+  
+            //为文件读取成功设置事件  
+            reader.onload=function(e) {  
+                alert('文件读取完成');  
+                imgFile = e.target.result;  
+                console.log(imgFile);  
+                $("#imgContent").attr('src', imgFile);  
+            };  
+  
+            //正式读取文件  
+            reader.readAsDataURL(file);  
+      }  
     </script>
 </body>
 </html>

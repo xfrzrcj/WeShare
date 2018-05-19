@@ -1,8 +1,7 @@
 $(function(){
 	$(".edit1").click(function(){
-		/*$(".mask").show();
-		$(".modal2").show();*/
-		onClickCallDapp()
+		$(".mask").show();
+		$(".modal2").show();
 	})
 	$(".edit").click(function(){
 		$(".mask").show();
